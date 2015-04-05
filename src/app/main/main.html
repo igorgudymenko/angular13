@@ -6,13 +6,11 @@
 
   <div class="row">
     <jb-carousel jb-items="cards" jb-actions="selectCard(item)">
-
-        <div class="card card-{{card.id}}" ng-repeat="card in cards" id="{{card.id}}">
+        <div class="card" id="{{card.id}}">
           <img ng-src="assets/images/{{card.image}}">
           <div class="phone">{{card.phone}}</div>
           <div class="name">{{card.name}}</div>
         </div>
-
     </jb-carousel>
   </div>
 

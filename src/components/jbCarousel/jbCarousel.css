@@ -1,15 +1,14 @@
-.cards {position: relative;
-  height: 340px;}
-.card {width: 270px; height: 340px; position: absolute; background: #DFDFDF;}
-.card img {position: relative; width: 80px; height: 80px; border-radius: 80px; top: 30px; left: 50%;}
+.cards {position: relative; height: 340px;}
+.card {width: 270px; height: 340px; position: absolute; background: #DFDFDF; transition-duration: 4s; z-index: 1;}
+.card img {position: relative; width: 80px; height: 80px; border-radius: 80px; top: 30px; left: 50%; margin-left: -40px;}
 .phone {position: absolute; bottom: 75px; left:0; text-align: center; padding: 10px 0; width: 100%;}
 .name {position: absolute; bottom: 0; left: 0; height: 55px; width: 100%; text-align: center; padding: 10px 0;}
+.card-0 {left:0; z-index: 0;}
+.card-1 {left: 272px;}
+.card-2 {left: 544px;}
+.card-3 {left: 816px;}
+.card-4 {left: 1088px;}
+.card-5 {left: 1360px;}
+.card-6 {left: 1632px;}
 
-.card-1 {left:0;}
-.card-2 {left: 272px;}
-.card-3 {left: 544px;}
-.card-4 {left: 816px;}
-.card-5 {left: 1088px;}
-.card-6 {left: 1360px;}
-.card-7 {left: 1632px;}
 
