@@ -1,0 +1,25 @@
+<div class="container">
+
+  <div ng-include="'components/navbar/navbar.html'"></div>
+
+  <hr>
+
+  <div class="row">
+    <jb-carousel jb-items="cards" jb-actions="selectCard(item)">
+
+        <div class="card card-{{card.id}}" ng-repeat="card in cards" id="{{card.id}}">
+          <img ng-src="assets/images/{{card.image}}">
+          <div class="phone">{{card.phone}}</div>
+          <div class="name">{{card.name}}</div>
+        </div>
+
+    </jb-carousel>
+  </div>
+
+  <hr>
+
+  <div class="footer">
+    <p>With ♥ from <a href="https://twitter.com/Swiip">@Swiip</a></p>
+  </div>
+
+</div>
