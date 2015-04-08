@@ -5,6 +5,18 @@
   <hr>
 
   <div class="row">
+    <form name="testForm">
+      <label>{{some}}</label><br>
+      <input name="field" type="text" ng-model="some" jb-mask="99:99">
+      <div ng-messages="testForm.field.$error">
+        <div ng-message="valueValid">value invalid</div>
+      </div>
+    </form>
+  </div>
+
+  <hr>
+
+  <div class="row">
     <jb-carousel jb-items="cards" jb-actions="selectCard(item)">
         <div class="card" id="{{card.id}}">
           <img ng-src="assets/images/{{card.image}}">

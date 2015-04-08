@@ -47,4 +47,6 @@ angular.module('ajs13')
         'image': 'protractor.png'
       }
     ];
+
+    $scope.some = '';
   });

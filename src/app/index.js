@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ajs13', ['ui.router'])
+angular.module('ajs13', ['ui.router', 'ngMessages'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
