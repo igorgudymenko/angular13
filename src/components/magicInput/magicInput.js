@@ -28,7 +28,7 @@ angular.module('ajs13').directive('jbMask', function() {
         }
       }
 
-      ngModel.$parsers.push(function(value){
+      ngModel.$parsers.push(function(value) {
         if (isValid(value, mask)) {
           return value;
         } else if (!isValid(value, mask.substr(0, value.length))) {
