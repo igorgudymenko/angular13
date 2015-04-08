@@ -5,25 +5,29 @@
   <hr>
 
   <div class="row">
-    <form name="testForm">
-      <label>{{some}}</label><br>
-      <input name="field" type="text" ng-model="some" jb-mask="99:99">
-      <div ng-messages="testForm.field.$error">
-        <div ng-message="valueValid">value invalid</div>
-      </div>
-    </form>
+    <!--<form name="testForm">-->
+      <!--<label>{{some}}</label><br>-->
+      <!--<input name="field" type="text" ng-model="some" jb-mask="99:99">-->
+      <!--<div ng-messages="testForm.field.$error">-->
+        <!--<div ng-message="valueValid">value invalid</div>-->
+      <!--</div>-->
+    <!--</form>-->
+
+      <input type="text" ng-model="some" jb-mask="(aa:99)">
+
+      <button ng-click="setVal()">test</button>
   </div>
 
   <hr>
 
   <div class="row">
-    <jb-carousel jb-items="cards" jb-actions="selectCard(item)">
-        <div class="card" id="{{card.id}}">
-          <img ng-src="assets/images/{{card.image}}">
-          <div class="phone">{{card.phone}}</div>
-          <div class="name">{{card.name}}</div>
-        </div>
-    </jb-carousel>
+    <!--<jb-carousel jb-items="cards" jb-actions="selectCard(item)">-->
+        <!--<div class="card" id="{{card.id}}">-->
+          <!--<img ng-src="assets/images/{{card.image}}">-->
+          <!--<div class="phone">{{card.phone}}</div>-->
+          <!--<div class="name">{{card.name}}</div>-->
+        <!--</div>-->
+    <!--</jb-carousel>-->
   </div>
 
   <hr>

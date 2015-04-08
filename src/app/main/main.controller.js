@@ -49,4 +49,8 @@ angular.module('ajs13')
     ];
 
     $scope.some = '';
+    $scope.setVal = function() {
+      console.log($scope.some);
+      $scope.some = '(aa:99)';
+    }
   });
